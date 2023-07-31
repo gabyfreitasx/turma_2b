@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0%
 }
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
 ;
 .cabecalho{
-    background-color:#6e97da;
-    color: white;
+    background-color:#3169c2;
+    color: rgb(10, 5, 5);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -20,4 +24,8 @@
     display: inline-block;
     margin: 0 16px;
     font-size: 24pxs;
+}
+
+.imagem-escola{
+    width: 800px;
 }
