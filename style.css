@@ -1,39 +1,76 @@
-*{
-    margin: 0;
-    padding: 0%
+:root {
+    --cor-de-fundo: #1E1E1E;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A375E;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
+}@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif;
 }
-
-body{
-    font-family: 'Josefin Sans', sans-serif;
+:root {
+    --cor-base: #ff6347;
+  }
+  :root {
+    --cor-fundo: #CCCCCC;
 }
-;
-.cabecalho{
-    background-color:#3169c2;
-    color: rgb(10, 5, 5);
+.conteudo-principal {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 24px 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
+.titulo-principal {
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+.titulo-principal span {
+    color: var(--verde);
+}
+.botao {
+    font-family: "Crakra Petch", sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo); 
+    border-left: 2px solid var(--botao-ativo); 
+    border-right: 2px solid var(--botao-ativo); 
+    border-top: none;
+    .botoes {
+        display: block;
+    }
     
-.cabecalho-imagem{
-    width: 20%;
-}
-
-.cabecalho-lista-item{
-    display: inline-block;
-    margin: 0 16px;
-    font-size: 24pxs;
-}
-
-.imagem-escola{
-    width: 500px;
-}
-
-.escola-icone{
-    width: 24px;
-}
-
-.estudante-div{
-text-align: center;
-}
+    @media screen and (min-width: 768px) {
+        .botoes {
+            display: flex;
+        }
+    
+        .botao:first-child {
+            border-radius: 40px 40px 0 0;}
+        
+        @media screen and (min-width: 768px) {
+            .botoes {
+                display: flex;
+            }
+        
+            .botao:first-child {
+                border-radius: 40px 0 0 0;
+            }
+        
+            .botao:last-child {
+                border-radius: 0 40px 0 0;
+            }
+        }
+        
