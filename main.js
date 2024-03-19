@@ -21,9 +21,5 @@ for(let i=0;i <botoes.length;i++){
 
         botoes[i].classList.add("ativo");
     }
-}<p class="numero impar">1</p>
-<p class="numero impar">2</p>
-<p class="numero impar">3</p>
-<p class="texto">Este é o primeiro parágrafo.</p>
-<p class="texto">Este é o segundo parágrafo.</p>
-<p class="texto">Este é o terceiro parágrafo.</p>
+
+

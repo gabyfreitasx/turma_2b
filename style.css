@@ -72,5 +72,48 @@ body {
             .botao:last-child {
                 border-radius: 0 40px 0 0;
             }
-        }
-        
+            .abas-textos{
+                background-color: var(--texto-fundo);
+            }
+            .abas-textos{
+                background-color: var(--texto-fundo);
+                padding: 40px;
+                border-radius: 0 0 40px 40px;
+            }
+            .botao.ativo{
+                background-color: var(--botao-ativo);
+                border-bottom: 4px solid var(--verde);
+            }
+            .aba-conteudo.ativo{
+                display:block;   
+            }
+            .aba-conteudo{
+                display: none;
+            }
+            .aba-conteudo-titulo-principal{
+                font-size: 28px;
+                text-align: center;
+            }
+            .aba-conteudo-titulo-secundario{
+                text-align: center;
+                color: var(--verde);
+                text-transform: uppercase;
+            }
+            <div class="aba-conteudo ativo">1</div>
+<div class="aba-conteudo">2</div>
+<div class="aba-conteudo">3</div>
+.aba-conteudo{
+    width: 100px;
+    height: 100px;
+    background: #b5b;
+    margin: 10px;
+  }
+  
+  .ativo{
+    display: block;
+  }
+  <div class="aba-conteudo">
+  <h3 class="aba-conteudo-titulo-principal">Boas vindas</h3>
+  <h4 class="aba-conteudo-titulo-secundario">Livros, filmes, músicas e arte</h4>
+</div>
+
